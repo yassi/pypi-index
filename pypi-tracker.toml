@@ -1,0 +1,61 @@
+[reports]
+rolling_days = [7, 30, 90, 180]
+calendar = ["weekly", "monthly", "yearly"]
+historical = ["daily"]
+summary = true
+
+[collections.yassi]
+title = "Packages written by Yassi"
+packages = [
+    "dj-control-room",
+    "dj-control-room-base",
+    "dj-redis-panel",
+    "dj-cache-panel",
+    "dj-celery-panel",
+    "dj-urls-panel",
+    "dj-signals-panel",
+    "dj-doom-panel",
+    "pypi-tracker",
+    "envio",
+]
+aggregate = true
+
+[collections.frameworks]
+title = "Python web frameworks"
+packages = [
+    "django",
+    "flask",
+    "fastapi",
+    "tornado",
+    "starlette",
+    "litestar",
+    "falcon",
+]
+aggregate = true
+
+
+[collections.django-extensions]
+title = "Django Admin and Extensions"
+packages = [
+    "django-unfold",
+    "django-jazzmin",
+    "django-grappelli",
+    "django-admin-interface",
+    "django-daisy",
+    "django-import-export",
+    "django-debug-toolbar",
+    "django-extensions",
+]
+aggregate = true
+
+
+
+[dashboard]
+enabled = true
+title = "PyPI Package Statistics"
+
+[storage]
+directory = "data/"
+
+[output]
+directory = "public/"
